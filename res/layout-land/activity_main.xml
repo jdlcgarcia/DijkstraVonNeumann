@@ -1,0 +1,52 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="horizontal"
+    >
+
+    <TextView
+        android:id="@+id/TVtitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/title_dijkstra"
+        android:layout_centerHorizontal="true" 
+        android:layout_marginBottom="8dp"
+        android:textSize="22sp"/>
+
+    <ScrollView
+        android:id="@+id/SVdescription"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/TVtitle"
+        android:layout_toRightOf="@+id/IVmainpic"
+        android:layout_marginLeft="8dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginRight="8dp"
+        
+        android:maxWidth="250dp"
+        android:minHeight="30dp" >
+
+        <TextView
+        android:id="@+id/description"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/desc_dijkstra"
+        android:layout_marginBottom="8dp"
+        android:textSize="22sp"
+        />
+    </ScrollView>
+
+    <ImageView
+        android:id="@+id/IVmainpic"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="8dp"
+        android:adjustViewBounds="true"
+        android:contentDescription="@string/CD_dijkstra"
+        android:maxWidth="250dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/dijkstra" />
+
+</RelativeLayout>

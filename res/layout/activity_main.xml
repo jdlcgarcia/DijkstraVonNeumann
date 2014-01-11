@@ -5,20 +5,53 @@
     >
 
     <TextView
-        android:id="@+id/textView1"
+        android:id="@+id/TVtitle"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/hello_world"
-        android:layout_centerHorizontal="true" />
+        android:text="@string/title_vonneumann"
+        android:layout_centerHorizontal="true" 
+        android:layout_marginBottom="8dp"
+        android:textSize="22sp"/>
 
     <ImageView
-        android:id="@+id/imageView1"
-        android:layout_width="fill_parent"
-        android:layout_height="fill_parent"
-        android:layout_below="@id/textView1"
-        android:layout_centerHorizontal="true"
+        android:id="@+id/IVmainpic"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/TVtitle"
+        android:layout_marginRight="8dp"
+        android:layout_centerHorizontal="true" 
+        android:layout_marginBottom="8dp"
+        
+        android:adjustViewBounds="true"
+        android:maxWidth="250dp"
+        android:scaleType="centerCrop"
+        android:scrollbars="horizontal"
+        
         android:src="@drawable/vonneumann"
+       	android:contentDescription="@string/CD_vonneumann"
         
         />
+
+    <ScrollView
+        android:id="@+id/SVdescription"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginBottom="8dp" 
+        android:layout_below="@+id/IVmainpic"
+        
+        android:minHeight="30dp"
+        >
+
+        <TextView
+        android:id="@+id/description"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/desc_vonneumann"
+        android:layout_marginBottom="8dp"
+        android:textSize="22sp"
+        />
+    </ScrollView>
 
 </RelativeLayout>
